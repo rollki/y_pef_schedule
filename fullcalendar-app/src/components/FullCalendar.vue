@@ -310,8 +310,7 @@ export default {
         calendarEvent.setProp('title', updatedEvent.title);
         calendarEvent.setStart(updatedEvent.start);
         calendarEvent.setEnd(updatedEvent.end);
-        calendarEvent.setProp('color', updatedEvent.colorEvent);
-        calendarEvent.setExtendedProp('colorEvent', updatedEvent.colorEvent);
+        calendarEvent.setProp('color', updatedEvent.color);
         calendarEvent.setExtendedProp('description', updatedEvent.description);
         calendarEvent.setExtendedProp('instructor', updatedEvent.instructor);
         calendarEvent.setExtendedProp('room', updatedEvent.room);
@@ -403,7 +402,6 @@ export default {
         start: clickInfo.event.start,
         end: clickInfo.event.end,
         room: clickInfo.event.extendedProps.room,
-        colorEvent: clickInfo.event.extendedProps.colorEvent,
         instructor: clickInfo.event.extendedProps.instructor,
         description: clickInfo.event.extendedProps.description,
         locationId: clickInfo.event.extendedProps.locationId,
